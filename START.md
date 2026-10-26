@@ -36,11 +36,11 @@ Claude, 이 파일을 읽었다면 아래를 순서대로 한다.
 - 사람에게 묻는 건 1 · 5 · 6단계의 질문뿐이다. 그 밖에는 묻지 않고 진행한다.
 - 이미 있던 파일은 절대 덮어쓰지 않는다 — 없는 것만 만든다. 방금 복사한 파일 가운데 4단계 카드의 끝 날짜, 5단계 `CLAUDE.md`의 세 칸, 6단계 새 일간 노트의 두 자리(목차 첫 줄 · 첫 제목)만 채운다.
 
-**시작 전 — 저장소 폴더 안인지 본다.** 이 파일을 저장소 폴더 안에서 읽고 있지 않다면(링크로만 받았다면) 먼저 저장소를 받는다: `git clone https://github.com/edgar-forge/ai-blueprint-2030.git ~/Downloads/ai-blueprint-2030`. git이 없으면 `curl -L https://github.com/edgar-forge/ai-blueprint-2030/archive/refs/heads/main.zip -o ~/Downloads/ai-blueprint-2030.zip`로 받아 압축을 풀고, 풀린 폴더를 저장소 폴더로 쓴다. 이미 받아 둔 폴더가 있으면 그것을 쓴다. 아래 경로(`vault-template/` · `palantir/` · `세팅/` · `성원에게_묻기/`)는 전부 이 저장소 폴더 기준이다.
+**시작 전 — 저장소 폴더 안인지 본다.** 이 파일을 저장소 폴더 안에서 읽고 있지 않다면(링크로만 받았다면) 먼저 저장소를 받는다: `git clone https://github.com/edgar-forge/ai-blueprint-2030.git ~/Downloads/ai-blueprint-2030`. git이 없으면 `curl -L https://github.com/edgar-forge/ai-blueprint-2030/archive/refs/heads/main.zip -o ~/Downloads/ai-blueprint-2030.zip`로 받아 압축을 풀고, 풀린 폴더를 저장소 폴더로 쓴다. 이미 받아 둔 폴더가 있으면 그것을 쓴다. 아래 경로(`vault-template/` · `palantir/` · `세팅/` · `다시_묻기/`)는 전부 이 저장소 폴더 기준이다.
 
 0. **옵시디언이 있는지 본다.** 맥은 `/Applications/Obsidian.app`이 있는지 본다. 없고 `brew`가 있으면 `brew install --cask obsidian`으로 설치한다. `brew`가 없거나 맥이 아니면 https://obsidian.md/download 를 알려 주고 다음 단계로 간다(볼트는 먼저 만들어 두고, 옵시디언은 사람이 깐 뒤 열면 된다).
 1. **볼트 위치를 묻는다.** 기본값은 `~/Documents/Obsidian Vault`. 없으면 만든다. 이미 노트가 있는 폴더면 "기존 노트는 건드리지 않고 없는 폴더와 파일만 더한다"고 말하고 진행한다.
-2. **`vault-template/` 안의 폴더와 파일을 볼트로 복사한다.** 숨김 폴더 `.obsidian/`(옵시디언 플러그인 설정 · 단축키 · 기본 동작 설정)도 같이 복사한다. `.vscode/`는 지금 복사하지 않는다 — 검색 엔진을 붙일 때 들어간다. 그리고 `성원에게_묻기/`를 볼트 `3. Resource/성원에게_묻기/`로, `세팅/` 다섯 장을 볼트 `3. Resource/세팅/`으로 복사한다. 같은 이름의 파일이 이미 있으면 건너뛴다.
+2. **`vault-template/` 안의 폴더와 파일을 볼트로 복사한다.** 숨김 폴더 `.obsidian/`(옵시디언 플러그인 설정 · 단축키 · 기본 동작 설정)도 같이 복사한다. `.vscode/`는 지금 복사하지 않는다 — 검색 엔진을 붙일 때 들어간다. 그리고 `다시_묻기/`를 볼트 `3. Resource/다시_묻기/`로, `세팅/` 다섯 장을 볼트 `3. Resource/세팅/`으로 복사한다. 같은 이름의 파일이 이미 있으면 건너뛴다.
 3. **커뮤니티 플러그인 셋을 받는다.** `bash palantir/install_plugins.sh "<볼트 경로>"`를 실행한다. Calendar · Periodic Notes · Smart Typography 본체를 각 플러그인 저장소의 공식 배포 주소에서 받아 `.obsidian/plugins/`에 넣고, 틀에 들어 있던 설정값은 그대로 둔다. Importer는 묻지 않는다. 사람이 먼저 노션 · 에버노트에서 옮겨 오겠다고 말했을 때만 `--with-importer`를 붙인다. 인터넷이 없어 실패하면 `3. Resource/세팅/옵시디언.md` 3절의 직접 설치 법을 알려 주고 넘어간다.
 4. **프로젝트 카드의 끝 날짜를 적는다.** 볼트 `1. Project/세컨브레인 만들기/_카드.md`의 끝 날짜 줄에서 괄호를 통째로 지우고, 그 자리에 오늘부터 30일 뒤 날짜를 `YYYY-MM-DD`로 적는다.
 5. **볼트의 `CLAUDE.md`를 연다.** 「1. 나」 절의 세 칸(이름 · 지금 하는 일 · 원하는 것 한 줄)을 사람에게 한 번에 묻고, 칸마다 괄호 자리를 사람의 답으로 바꾼다. 문장을 다듬지 않는다 — 사람이 쓴 말 그대로.
