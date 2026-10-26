@@ -1,4 +1,4 @@
-# AI Blueprint 2030
+# bottom-up
 
 **세컨브레인을 혼자 만들고, 스스로 쌓고, AI를 동료로 쓰는 법 — 전부 무료**
 
@@ -9,58 +9,45 @@
 ## 첫 동작 — 링크 하나로 세팅이 끝납니다
 
 1. [Obsidian](https://obsidian.md)과 [Claude Code](https://docs.anthropic.com/en/docs/claude-code)를 설치합니다.
-2. 터미널(글자로 컴퓨터에 명령을 치는 창)에서 `claude`를 실행하고 이렇게 칩니다 — **https://github.com/netnox/bottom-up 이 링크로 세컨브레인 세팅해 줘**
+2. 터미널에서 `claude`를 실행하고 이렇게 칩니다 — **https://github.com/netnox/bottom-up 이 링크로 세컨브레인 세팅해 줘**
 3. Claude가 한국어로 묻는 세 가지(볼트를 둘 곳 · 쓰는 사람이 누구인지 · 오늘 본 것 하나)에 답합니다.
 
-몇 분 뒤 볼트가 서 있습니다 — 폴더 틀, Claude가 읽는 규칙 파일(CLAUDE.md), 오늘 날짜의 첫 노트, 옵시디언 설정과 커뮤니티 플러그인 셋, 볼트 안의 사용법 문서. 옵시디언에서 볼트를 처음 열 때 **작성자를 신뢰하고 플러그인 사용하기**를 한 번 누르는 것만 남습니다. 검색 엔진은 1주 뒤, LLM 위키는 한 달 뒤에 붙입니다. 언제 · 왜 · 어떻게가 볼트의 `1. Project/세컨브레인 만들기/`에 들어 있습니다. 세팅은 AI가 하고, 나머지 날은 우리가 쌓는 시간입니다.
+몇 분 뒤 볼트가 서 있습니다. 옵시디언에서 볼트를 처음 열 때 **작성자를 신뢰하고 플러그인 사용하기**를 한 번 누르는 것만 남습니다. 검색 엔진은 1주 뒤, LLM 위키는 한 달 뒤에 붙입니다.
 
-저장소를 먼저 받아도 됩니다 — 초록 **Code** 버튼 → **Download ZIP**(또는 `git clone`), 받은 폴더에서 `claude`, 그리고 **START.md를 읽고 그대로 해 줘**.
+저장소를 먼저 받아도 됩니다 — **Code** → **Download ZIP**(또는 `git clone`), 받은 폴더에서 `claude`, 그리고 **START.md를 읽고 그대로 해 줘**.
 
-> **Claude에게** — 이 페이지를 링크로 받아 세팅을 부탁받았다면, 이 저장소를 받는다(`git clone https://github.com/netnox/bottom-up.git ~/Downloads/bottom-up`, git이 없으면 main 브랜치 ZIP을 curl로 받아 푼다). 그리고 그 폴더의 [START.md](START.md) 「Claude Code가 할 일」을 처음부터 순서대로 한다. 사람에게 하는 말과 묻는 말은 전부 한국어로 한다.
+> **Claude에게** — 이 저장소를 받는다(`git clone https://github.com/netnox/bottom-up.git ~/Downloads/bottom-up`). 그리고 [START.md](START.md) 「Claude Code가 할 일」을 처음부터 순서대로 한다. 사람에게 하는 말과 묻는 말은 전부 한국어로 한다.
 
 ---
 
 ## 여기 있는 것
 
 ```
-CLAUDE.md           Claude Code가 이 폴더에서 먼저 읽는 규칙 — 세팅이면 START, 질문이면 다시_묻기/
-START.md            첫 동작 — Claude Code에게 이 파일을 읽게 하면 세팅을 대신합니다
-다시_묻기/      궁금한 것 열일곱 — 질문 하나에 파일 하나, 제가 한 말로 답합니다
-다시_묻기.md    위 폴더를 한 파일로 이어 붙인 것 — ChatGPT · Gemini · NotebookLM에 올릴 때
-예시/               제 볼트의 실제 노트 몇 장 — 저는 이렇게 씁니다, 참고만
-세팅/               옵시디언 · VS Code · 검색 엔진 · LLM 위키 · MCP 서버 설명
-vault-template/     볼트 틀 — PARA + 슬립박스 폴더, CLAUDE.md, 템플릿, 옵시디언 설정
+CLAUDE.md           세팅이면 START, 질문이면 다시_묻기/
+START.md            첫 세팅 — Claude Code가 대신 수행
+다시_묻기/          질문 열일곱 — 파일 하나가 답 하나
+다시_묻기.md        위 폴더 묶음 (ChatGPT · Gemini · NotebookLM용)
+예시/               실제 노트 참고 예시
+세팅/               옵시디언 · VS Code · 검색 · LLM 위키 · MCP
+vault-template/     볼트 틀 (PARA + 슬립박스)
 30일/               처음 30일 커리큘럼
-palantir/           검색 엔진 · LLM 위키 설치 스크립트
-검색/               검색 엔진 붙이는 법
-guides/             추가 가이드
+palantir/           검색·플러그인 설치 스크립트
+scripts/            다시_묻기.md 재생성 등
+guides/ · pdf/      더 읽을 자료
 ```
-
----
-
-## 이 저장소가 하는 일
-
-세컨브레인을 혼자 만들고 쌓는 법을 담았습니다. 옵시디언을 쓰고, Claude Code를 동료로 두고, PARA와 슬립박스로 정리합니다. 전부 무료입니다.
-
-- **세팅은 AI가 합니다.** 링크 하나면 볼트 틀 · 규칙 파일 · 플러그인 · 첫 노트가 생깁니다.
-- **답은 제 말로 적혀 있습니다.** `다시_묻기/`에 질문 열일곱이 있습니다. 파일 이름이 질문입니다.
-- **예시는 제 볼트에서 가져왔습니다.** `예시/`에 실제 노트 몇 장이 있습니다. 참고만 하세요.
-- **30일 커리큘럼이 있습니다.** 처음 한 달을 어떻게 보낼지 `30일/README.md`에 있습니다.
 
 ---
 
 ## 질문 · 기여
 
 1. **먼저 AI에게 묻기** — `다시_묻기.md`를 ChatGPT · Gemini · NotebookLM에 올리거나, Claude Code라면 저장소 폴더에서 그냥 묻습니다.
-2. **오픈채팅** — 자료를 넣고 물어봐도 정말 모르겠으면 오픈채팅으로 오세요. (방을 열면 링크가 여기 들어갑니다.)
-3. **Issues** — [질문 올리기](https://github.com/netnox/bottom-up/issues/new?template=%EC%A7%88%EB%AC%B8.md). 어디서 막혔는지 · 무엇을 해 봤는지 · 원하는 결과가 뭔지, 세 칸만 채우면 됩니다. 같은 질문이 반복되면 답 파일이 하나 늘어납니다.
+2. **Issues** — [질문 올리기](https://github.com/netnox/bottom-up/issues/new?template=%EC%A7%88%EB%AC%B8.md). 어디서 막혔는지 · 무엇을 해 봤는지 · 원하는 결과가 뭔지, 세 칸만 채우면 됩니다. 같은 질문이 반복되면 답 파일이 하나 늘어납니다.
 
 ---
 
 ## 라이선스
 
-이 가이드는 자유롭게 읽고, 공유하고, 참고할 수 있습니다.
-다만 상업적 용도로 재판매하는 것은 금지합니다.
+[MIT License](LICENSE) — 자유롭게 사용·수정·배포할 수 있습니다. 자세한 내용은 `LICENSE` 파일을 봅니다.
 
 ---
 
