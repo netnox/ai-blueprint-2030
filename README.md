@@ -9,24 +9,24 @@
 ## 첫 동작 — 링크 하나로 세팅이 끝납니다
 
 1. [Obsidian](https://obsidian.md)과 [Claude Code](https://docs.anthropic.com/en/docs/claude-code)를 설치합니다.
-2. 터미널(글자로 컴퓨터에 명령을 치는 창)에서 `claude`를 실행하고 이렇게 칩니다 — **https://github.com/edgar-forge/ai-blueprint-2030 이 링크로 세컨브레인 세팅해 줘**
+2. 터미널(글자로 컴퓨터에 명령을 치는 창)에서 `claude`를 실행하고 이렇게 칩니다 — **https://github.com/netnox/ai-blueprint-2030 이 링크로 세컨브레인 세팅해 줘**
 3. Claude가 한국어로 묻는 세 가지(볼트를 둘 곳 · 쓰는 사람이 누구인지 · 오늘 본 것 하나)에 답합니다.
 
 몇 분 뒤 볼트가 서 있습니다 — 폴더 틀, Claude가 읽는 규칙 파일(CLAUDE.md), 오늘 날짜의 첫 노트, 옵시디언 설정과 커뮤니티 플러그인 셋, 볼트 안의 사용법 문서. 옵시디언에서 볼트를 처음 열 때 **작성자를 신뢰하고 플러그인 사용하기**를 한 번 누르는 것만 남습니다. 검색 엔진은 1주 뒤, LLM 위키는 한 달 뒤에 붙입니다. 언제 · 왜 · 어떻게가 볼트의 `1. Project/세컨브레인 만들기/`에 들어 있습니다. 세팅은 AI가 하고, 나머지 날은 우리가 쌓는 시간입니다.
 
 저장소를 먼저 받아도 됩니다 — 초록 **Code** 버튼 → **Download ZIP**(또는 `git clone`), 받은 폴더에서 `claude`, 그리고 **START.md를 읽고 그대로 해 줘**.
 
-> **Claude에게** — 이 페이지를 링크로 받아 세팅을 부탁받았다면, 이 저장소를 받는다(`git clone https://github.com/edgar-forge/ai-blueprint-2030.git ~/Downloads/ai-blueprint-2030`, git이 없으면 main 브랜치 ZIP을 curl로 받아 푼다). 그리고 그 폴더의 [START.md](START.md) 「Claude Code가 할 일」을 처음부터 순서대로 한다. 사람에게 하는 말과 묻는 말은 전부 한국어로 한다.
+> **Claude에게** — 이 페이지를 링크로 받아 세팅을 부탁받았다면, 이 저장소를 받는다(`git clone https://github.com/netnox/ai-blueprint-2030.git ~/Downloads/ai-blueprint-2030`, git이 없으면 main 브랜치 ZIP을 curl로 받아 푼다). 그리고 그 폴더의 [START.md](START.md) 「Claude Code가 할 일」을 처음부터 순서대로 한다. 사람에게 하는 말과 묻는 말은 전부 한국어로 한다.
 
 ---
 
 ## 여기 있는 것
 
 ```
-CLAUDE.md           Claude Code가 이 폴더에서 먼저 읽는 규칙 — 세팅이면 START, 질문이면 성원에게_묻기/
+CLAUDE.md           Claude Code가 이 폴더에서 먼저 읽는 규칙 — 세팅이면 START, 질문이면 다시_묻기/
 START.md            첫 동작 — Claude Code에게 이 파일을 읽게 하면 세팅을 대신합니다
-성원에게_묻기/      궁금한 것 열일곱 — 질문 하나에 파일 하나, 제가 한 말로 답합니다
-성원에게_묻기.md    위 폴더를 한 파일로 이어 붙인 것 — ChatGPT · Gemini · NotebookLM에 올릴 때
+다시_묻기/      궁금한 것 열일곱 — 질문 하나에 파일 하나, 제가 한 말로 답합니다
+다시_묻기.md    위 폴더를 한 파일로 이어 붙인 것 — ChatGPT · Gemini · NotebookLM에 올릴 때
 예시/               제 볼트의 실제 노트 몇 장 — 저는 이렇게 씁니다, 참고만
 vault-template/     볼트 틀 — PARA 네 폴더 + Slip-Box + 개념 + 일간 · 주간, 폴더마다 설명(_여기는.md), 처음 30일 프로젝트 폴더, CLAUDE.md, 노트 템플릿 셋, 옵시디언 설정(.obsidian)
 세팅/               제가 실제로 쓰는 세팅 다섯 장 — 옵시디언 · VS Code · 검색 엔진 · LLM 위키 · MCP 서버
@@ -46,10 +46,10 @@ pdf/                가이드 PDF 판
 이 순서로 물어 주세요.
 
 1. **자료를 AI에 넣고 묻습니다.** 「잘 몰라도 되는데 그냥 내가 정리한 파일을 AI한테 넣고 물어봐라」 · 「그렇게 학습하라」
-   - Claude Code — 이 저장소 폴더(또는 세팅된 볼트)에서 그냥 물으면 됩니다. `CLAUDE.md`가 Claude를 [성원에게_묻기/](성원에게_묻기/)의 답 파일로 보냅니다.
-   - ChatGPT · Gemini · NotebookLM — [성원에게_묻기.md](성원에게_묻기.md) 한 파일을 올리고 물으면 됩니다.
+   - Claude Code — 이 저장소 폴더(또는 세팅된 볼트)에서 그냥 물으면 됩니다. `CLAUDE.md`가 Claude를 [다시_묻기/](다시_묻기/)의 답 파일로 보냅니다.
+   - ChatGPT · Gemini · NotebookLM — [다시_묻기.md](다시_묻기.md) 한 파일을 올리고 물으면 됩니다.
 2. **정말 모르겠으면 오픈채팅.** 자료를 AI에 넣고 물어도 모르겠으면 저에게 직접 물어 주세요. 오픈채팅 링크는 방을 열면 여기에 올립니다.
-3. **Issues** — [질문 올리기](https://github.com/edgar-forge/ai-blueprint-2030/issues/new?template=%EC%A7%88%EB%AC%B8.md). 어디서 막혔는지 · 무엇을 해 봤는지 · 원하는 결과가 뭔지, 세 칸만 채우면 됩니다. 같은 질문이 반복되면 답 파일이 하나 늘어납니다.
+3. **Issues** — [질문 올리기](https://github.com/netnox/ai-blueprint-2030/issues/new?template=%EC%A7%88%EB%AC%B8.md). 어디서 막혔는지 · 무엇을 해 봤는지 · 원하는 결과가 뭔지, 세 칸만 채우면 됩니다. 같은 질문이 반복되면 답 파일이 하나 늘어납니다.
 
 - **30일 동행** — 혼자서는 축적이 안 도는 분을 위한 방입니다. 세팅법만 필요하면 이 저장소로 충분합니다. 안내는 준비 중입니다.
 
@@ -87,7 +87,7 @@ START.md → vault-template/   ← 오늘 세팅한다 (AI가 한다)
 
 ## 업데이트
 
-이 저장소는 계속 자랍니다. Issues와 오픈채팅에 올라온 질문의 답이 `성원에게_묻기/`에 한 장씩 돌아옵니다. 오른쪽 위 Watch를 눌러 두시면 업데이트 알림을 받을 수 있습니다. 바뀐 것은 [CHANGELOG.md](CHANGELOG.md)에 적습니다.
+이 저장소는 계속 자랍니다. Issues와 오픈채팅에 올라온 질문의 답이 `다시_묻기/`에 한 장씩 돌아옵니다. 오른쪽 위 Watch를 눌러 두시면 업데이트 알림을 받을 수 있습니다. 바뀐 것은 [CHANGELOG.md](CHANGELOG.md)에 적습니다.
 
 ---
 
